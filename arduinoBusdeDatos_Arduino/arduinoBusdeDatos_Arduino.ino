@@ -4,15 +4,24 @@
 int led = 0;
 int dato = 0;
 int EstadodeBusqueda = 0;
+int boton = 2;
+
 
 
 void setup() {
   Serial.begin(9600);
   Serial.println("hola soy arduino");
   pinMode (13, OUTPUT);
+  pinMode (boton,INPUT);
 }
 
 void loop() {
+
+  //aqui nuevo codigo
+  if (digitalRead(boton)==1){
+    Serial.print ("H");
+    delay(500);
+  }
   if (Serial.available()) {
     char letra = Serial.read();
     if (letra == 'L') {
