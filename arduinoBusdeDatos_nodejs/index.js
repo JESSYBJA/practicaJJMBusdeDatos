@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const serial = require ('serialport');
-//holaaaa
+
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = '521700668:AAEWq0Pf7YWq5WVYPQuBnWsNiM0TjGRcaqg';
