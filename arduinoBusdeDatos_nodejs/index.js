@@ -16,7 +16,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 
   const chatId = msg.chat.id;
   const resp = match[1]; // the captured "whatever"
-
+port.write (resp);
   // send back the matched "whatever" to the chat
   bot.sendMessage(chatId, resp);
 });
