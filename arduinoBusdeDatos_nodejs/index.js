@@ -29,9 +29,18 @@ bot.on('message', (msg) => {
   // send a message to the chat acknowledging receipt of their message
   bot.sendMessage(chatId, 'Received your message');
 });
+
 var OpcionSerial = {
   baudRate: 9600,
   autoOpen: true
 }
 var Puerto = "/COMXX";
 var port = new serial (Puerto, OpcionSerial);
+
+port.on('readable', function () {
+  var Data= port.read();
+  console.log('Data:', Data);
+  if (Data== "H") {
+  bot.sendMessage (521700668,"hola alguien entro")
+  }
+});
