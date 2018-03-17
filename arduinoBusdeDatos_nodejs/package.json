@@ -1,0 +1,23 @@
+{
+  "name": "arduinonodejs",
+  "version": "1.0.0",
+  "description": "bus de datos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JESSYBJA/practicaJJMBusdeDatos.git"
+  },
+  "author": "Jonathan Marlon Jessi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JESSYBJA/practicaJJMBusdeDatos/issues"
+  },
+  "homepage": "https://github.com/JESSYBJA/practicaJJMBusdeDatos#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0",
+    "serialport": "^6.1.1"
+  }
+}
